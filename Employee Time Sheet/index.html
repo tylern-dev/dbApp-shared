@@ -32,23 +32,8 @@
                             <th>Total Billed ($)</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td scope="row"></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td scope="row"></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
+                    <tbody  id="employee-table">
+                        
                     </tbody>
                 </table>
             </div>
@@ -71,11 +56,11 @@
                         </div>
                         <div class="form-group">
                             <label for="">Start Date (DD/MM/YY - ex. 01/01/89)</label>
-                            <input type="text" class="form-control" name="" id="employee-date" aria-describedby="helpId" placeholder="">
+                            <input type="date" class="form-control" name="" id="employee-date" aria-describedby="helpId" placeholder="">
                         </div>
                         <div class="form-group">
                             <label for="">Monthly Rate</label>
-                            <input type="text" class="form-control" name="" id="employee-rate" aria-describedby="helpId" placeholder="">
+                            <input type="number" class="form-control" name="" id="employee-rate" aria-describedby="helpId" placeholder="">
                         </div>
                         <button type="submit" class="btn btn-primary" id="add-user">Submit</button>
                     </div>
@@ -84,10 +69,15 @@
         </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+
+
 </body>
 
 </html>
